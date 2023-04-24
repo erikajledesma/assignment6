@@ -284,15 +284,16 @@ while not done:
     pygame.draw.line(screen, WHITE, [320, 140], [336, 204], 1)
     pygame.draw.line(screen, WHITE, [320, 140], [338, 202], 1)
 
-    #net part 3
-    pygame.draw.line(screen, WHITE, [480, 140], [476, 216], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [474, 214], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [472, 212], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [470, 210], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [468, 208], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [466, 206], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [464, 204], 1)
-    pygame.draw.line(screen, WHITE, [480, 140], [462, 202], 1)
+    #net part 3 function
+    def draw_net3(screen, color, num1, num2, num):
+        #function that takes screen display input, color, start position of line, end position of line, and num
+        #to draw lines on right side of net
+        for n in range(9):
+            pygame.draw.line(screen, color, [480,140], [num1, num2], num)
+            num1 = num1 - 2
+            num2 = num2 - 2
+
+    draw_net3(screen, WHITE, 476, 216, 1)
 
     #net part 4
     pygame.draw.line(screen, WHITE, [324, 144], [476, 144], 1)
