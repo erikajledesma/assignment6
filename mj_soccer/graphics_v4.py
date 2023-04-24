@@ -296,20 +296,27 @@ while not done:
     draw_net3(screen, WHITE, 476, 216, 1)
 
     #net part 4
-    pygame.draw.line(screen, WHITE, [324, 144], [476, 144], 1)
-    pygame.draw.line(screen, WHITE, [324, 148], [476, 148], 1)
-    pygame.draw.line(screen, WHITE, [324, 152], [476, 152], 1)
-    pygame.draw.line(screen, WHITE, [324, 156], [476, 156], 1)
-    pygame.draw.line(screen, WHITE, [324, 160], [476, 160], 1)
-    pygame.draw.line(screen, WHITE, [324, 164], [476, 164], 1)
-    pygame.draw.line(screen, WHITE, [324, 168], [476, 168], 1)
-    pygame.draw.line(screen, WHITE, [324, 172], [476, 172], 1)
-    pygame.draw.line(screen, WHITE, [324, 176], [476, 176], 1)
-    pygame.draw.line(screen, WHITE, [335, 180], [470, 180], 1)
-    pygame.draw.line(screen, WHITE, [335, 184], [465, 184], 1)
-    pygame.draw.line(screen, WHITE, [335, 188], [465, 188], 1)
-    pygame.draw.line(screen, WHITE, [335, 192], [465, 192], 1)
-    pygame.draw.line(screen, WHITE, [335, 196], [465, 196], 1)
+    def draw_net4(screen, color, num1, num2, num):
+        #function that takes screen display input, color, start position of line, end position of line, and num
+        #to draw lines on right side of net
+        for n in range(10):
+            pygame.draw.line(screen, color, [324, num1], [476, num2], num)
+            num1 = num1 + 4
+            num2 = num2 + 4
+
+        pygame.draw.line(screen, color, [335, 180], [470, 180], 1)
+
+        num1 = 184
+        num2 = 184
+
+        for n in range(5):
+            pygame.draw.line(screen, color, [335, num1], [465, num2], num)
+            num1 = num1 + 4
+            num2 = num2 + 4
+    
+    draw_net4(screen, WHITE, 144, 144, 1)
+
+
 
     #stands right
     pygame.draw.polygon(screen, RED, [[680, 220], [800, 340], [800, 290], [680, 180]])
