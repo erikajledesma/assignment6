@@ -235,14 +235,15 @@ while not done:
     pygame.draw.ellipse(screen, light_color, [670, 20, 20, 20])
     pygame.draw.line(screen, GRAY, [590, 20], [690, 20], 2)
 
+    
     #net
-    #function to draw first part of the net
-    #screen: pygame window
-    #color: color of the lines
-    #list1: coordinates for starting position of line
-    #list2: coordinates for ending position of line
-    #num: line thickness
     def drawLines1(screen, color, list1, list2, num):
+        '''draw lines for the first part of the net
+    screen: pygame window
+    color: color of the lines
+    list1: coordinates for starting position of line
+    list2: coordinates for ending positioin of line
+    num: line thickness'''
         for i in range(8):
             pygame.draw.line(screen, color, list1, list2, num)
             list1[0] += 5
@@ -320,14 +321,13 @@ while not done:
     # pygame.draw.line(screen, WHITE, [470, 140], [456, 200], 1)
     # pygame.draw.line(screen, WHITE, [475, 140], [459, 200], 1)
 
-    #net part 2
-    #function to draw second part of the net
-    #screen: pygame window
-    #color: color of the lines
-    #list1: coordinates for starting position of line
-    #list2: coordinates for ending position of line
-    #num: line thickness
     def drawLines2(screen, color, list1, list2, num):
+        '''draw lines for the second part of the net
+    screen: pygame window
+    color: color of the lines
+    list1: coordinates for starting position of line
+    list2: coordinates for ending positioin of line
+    num: line thickness'''
         for i in range(8):
             pygame.draw.line(screen, color, list1, list2, num)
             list2[0] += 2
