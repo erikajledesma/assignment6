@@ -296,11 +296,16 @@ while not done:
     draw_net3(screen, WHITE, 476, 216, 1)
 
     #net part 4
-    def draw_net4(screen, color, num1, num2, num):
-        #function that takes screen display input, color, start position of line, end position of line, and num
-        #to draw lines on right side of net
+    def draw_net4(screen, color, num1, num2, width):
+        ''' draws lines for the fourth part of the net
+            screen: python display screen
+            color: sets color of lines
+            num1: y-value of starting vector for line
+            num2: x-value of ending vector for line
+            width: 
+              '''
         for n in range(10):
-            pygame.draw.line(screen, color, [324, num1], [476, num2], num)
+            pygame.draw.line(screen, color, [324, num1], [476, num2], width)
             num1 = num1 + 4
             num2 = num2 + 4
 
@@ -310,7 +315,7 @@ while not done:
         num2 = 184
 
         for n in range(5):
-            pygame.draw.line(screen, color, [335, num1], [465, num2], num)
+            pygame.draw.line(screen, color, [335, num1], [465, num2], width)
             num1 = num1 + 4
             num2 = num2 + 4
     
