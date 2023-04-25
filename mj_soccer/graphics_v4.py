@@ -186,10 +186,9 @@ while not done:
 
     #goal
     pygame.draw.rect(screen, WHITE, [320, 140, 160, 80], 5)
-    pygame.draw.line(screen, WHITE, [340, 200], [460, 200], 3)
     pygame.draw.line(screen, WHITE, [320, 220], [340, 200], 3)
-    pygame.draw.line(screen, WHITE, [480, 220], [460, 200], 3)
     pygame.draw.line(screen, WHITE, [320, 140], [340, 200], 3)
+    pygame.draw.line(screen, WHITE, [340, 200], [460, 200], 3)
     pygame.draw.line(screen, WHITE, [480, 140], [460, 200], 3)
 
     #6 yard line goal box
@@ -207,22 +206,11 @@ while not done:
         pygame.draw.line(screen, GRAY, [110, 60], [210, 60], 2)
         pygame.draw.ellipse(screen, light_color, [i+20, 40, 20, 20])
 
-    # pygame.draw.ellipse(screen, light_color, [110, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [130, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [150, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [170, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [190, 40, 20, 20])
-
     #drawing the top row of the left light
     for i in range(90, 190, 20):
         pygame.draw.line(screen, GRAY, [110, 40], [210, 40], 2)
         pygame.draw.ellipse(screen, light_color, [i + 20, 20, 20, 20])
 
-    # pygame.draw.ellipse(screen, light_color, [110, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [130, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [150, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [170, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [190, 20, 20, 20])
 
 
     # uhh idk what the purpose of this line is necessarily
@@ -239,23 +227,12 @@ while not done:
     for i in range(570, 670, 20):
         pygame.draw.line(screen, GRAY, [590, 40], [690, 40], 2)
         pygame.draw.ellipse(screen, light_color, [i + 20, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [590, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [610, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [630, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [650, 20, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [670, 20, 20, 20])
-    # pygame.draw.line(screen, GRAY, [590, 20], [690, 20], 2)
-
 
     #draws bottom right light
     for i in range(570, 670, 20):
         pygame.draw.line(screen, GRAY, [590, 60], [690, 60], 2)
         pygame.draw.ellipse(screen, light_color, [i + 20, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [590, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [610, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [630, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [650, 40, 20, 20])
-    # pygame.draw.ellipse(screen, light_color, [670, 40, 20, 20])
+
 
 
     #net
